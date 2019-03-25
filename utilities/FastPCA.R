@@ -1,6 +1,8 @@
 
+#This function does PCA using a fast randomized projection method for doing the SVD
+# Input: a gene expression matrix 
+
 FastPCA <- function(Df,top.k,center.use = T, scale.use = F,iterative = F, check = F) {
-  #This function does PCA using a fast randomized projection method for doing the SVD
   
   #Check for issues in the matrix
   #Significantly increases the run time, only use it if you are getting errors

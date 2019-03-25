@@ -1,5 +1,8 @@
-# This function will allow us to plot a pair of genes as markers for single cell clusters. This is often useful when a single gene is 
-# not sufficient for defining a cluster 
+# Author: Shristi Pandey
+#==============================
+# This function will allow us to plot a pair of genes as combinatorial markers for single cell clusters in the form of a dot plot .
+# This is  useful when a single gene is not sufficient for defining a cluster 
+#======================================================
 
 set.ifnull=function(x,y) {
   if(is.null(x)) x=y

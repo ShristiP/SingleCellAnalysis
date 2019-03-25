@@ -1,4 +1,5 @@
 library(Hmisc)
+# A function to merge cells of two clusters into a single cluster
 force.merge = function(object,merge.clust=NULL,new.name=NULL,char=FALSE,set.data.info=NULL,...){
             
             if (is.null(merge.clust)) return(object)
@@ -38,6 +39,7 @@ force.merge = function(object,merge.clust=NULL,new.name=NULL,char=FALSE,set.data
             return(object)
           
 }
+
 
 cluster.dist.by.ident = function(object,ident1.use=NULL, ident2.use="orig.ident", ident2.counts=NULL, ident1.names=NULL,  ident2.names=NULL, cells.use=NULL, ylab.use="%", xlab.use="Sample", legend.title="cluster") 
 {
